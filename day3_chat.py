@@ -10,7 +10,8 @@ while True:
     if user_input == "退出":
         break
     messages.append({"role": "user", "content": user_input})
-    r = httpx.post(URL, json={"model": MODEL, "messages": messages, "stream": False}, timeout=120)
+    r = httpx.post(URL, json={"model": MODEL, "messages": messages, "stream": False,"options": {"temperature": 0}}, timeout=120)
     reply = r.json()["message"]["content"]
+    print("输入token：", r.json()["prompt_eval_count"], "输出token：", r.json()["eval_count"])
     print("AI：", reply)
     messages.append({"role": "assistant", "content": reply}) 
