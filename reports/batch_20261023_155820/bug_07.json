@@ -1,0 +1,17 @@
+{
+  "title": "审批流启动报错",
+  "module": "PR管理",
+  "severity": 3,
+  "steps": [
+    "点击PR管理模块",
+    "点击新建PR按钮",
+    "选择BUFFER采购类型",
+    "填写PR相关信息",
+    "点击提交按钮",
+    "审批流启动报错，显示错误信息：Function not found: containsIgnoreCase",
+    "审批流状态显示为：未开始"
+  ],
+  "expected": "审批流应正常启动，状态显示为：已开始",
+  "actual": "审批流启动报错，状态显示为：未开始",
+  "environment": "未提供"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Cash Rebate列表“入账金额”字段列右侧间距不足",
+  "module": "RN清单",
+  "severity": 3,
+  "steps": [
+    "打开Cash Rebate列表页面",
+    "查看“入账金额”字段列",
+    "确认该字段列右侧没有足够的间距",
+    "参考左侧第一列的间距"
+  ],
+  "expected": "Cash Rebate列表中“入账金额”字段列右侧应留有足够的间距",
+  "actual": "“入账金额”字段列右侧间距不足",
+  "environment": "未提供"
+}

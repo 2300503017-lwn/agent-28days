@@ -1,0 +1,15 @@
+{
+  "title": "新建入库单提交时报错",
+  "module": "采购管理",
+  "severity": 2,
+  "steps": [
+    "点击采购管理模块",
+    "进入新建入库单页面",
+    "填写入库单相关信息",
+    "点击提交按钮",
+    "弹出错误提示：class com.comtech.procurement.bean.entity.purchase.storage.TStorageApprovalDetail cannot be cast to class com.comtech.procurement.bean.vo.purchase.storage.TStorageApprovalDetailVO"
+  ],
+  "expected": "新建入库单成功提交",
+  "actual": "弹出错误提示：class com.comtech.procurement.bean.entity.purchase.storage.TStorageApprovalDetail cannot be cast to class com.comtech.procurement.bean.vo.purchase.storage.TStorageApprovalDetailVO",
+  "environment": "未提供"
+}

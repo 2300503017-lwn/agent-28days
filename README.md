@@ -73,10 +73,10 @@ python day6_bugreport.py "点击登录按钮后页面一直转圈"
 
 | 命令 | 说明 |
 |---|---|
-| `python day6_bugreport.py "描述"` | 直接传入一条描述 |
-| `python day6_bugreport.py -f bug.txt` | 从文本文件读取一条描述 |
-| `python day6_batchreport.py -b bugs_sample.txt` | 批量模式：文件中每行一条描述，生成汇总报告 |
-| `python day6_bugreport.py` | 不带参数，进入交互输入 |
+| `python bug_report.py "描述"` | 直接传入一条描述 |
+| `python bug_report.py -f bug.txt` | 从文本文件读取一条描述 |
+| `python batch_report.py -b bugs_sample.txt` | 批量模式：文件中每行一条描述，生成汇总报告 |
+| `python bug_report.py` | 不带参数，进入交互输入 |
 | `--mock` | 不调用模型，用假数据测试流程 |
 | `-m 模型名` | 指定 Ollama 模型，默认 `qwen2.5:3b` |
 | `-o 文件夹` | 指定输出位置，默认 `reports` |
@@ -111,7 +111,7 @@ python day6_bugreport.py "点击登录按钮后页面一直转圈"
 | 第 3 天 | 多轮对话原理、system prompt 对比 | `day3_*.py`、`day3_notes.md` |
 | 第 4 天 | 结构化输出、JSON 校验、自动重试 | `day4_*.py`、`day4_note.md` |
 | 第 5 天 | token、上下文窗口、temperature、幻觉；稳定性测试 | `day5_*.py`、`day5_notes.md` |
-| 第 6 天 | 项目：缺陷报告生成器（单条 + 批量） | `day6_bugreport.py`、`day6_batchreport.py`、` bugs_sample.txt` |
+| 第 6 天 | 项目：缺陷报告生成器（单条 + 批量） | `bug_report.py`、`batch_report.py`、` bugs_sample.txt` |
 | 第 7 天 | 复盘与文档 | `README.md` |
 
 一些阶段性收获：
@@ -124,7 +124,7 @@ python day6_bugreport.py "点击登录按钮后页面一直转圈"
 
 ```
 agent-28days/
-├── day6_bugreport.py        # 缺陷报告生成器
+├── bug_report.py        # 缺陷报告生成器
 ├── bugs_sample.txt      # 批量模式示例输入
 ├── requirements.txt     # 依赖
 ├── reports/             # 生成的报告（示例输出）
