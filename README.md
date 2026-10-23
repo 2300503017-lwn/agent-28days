@@ -55,7 +55,7 @@ python -m pip install -r requirements.txt
 **2. 不装模型，先用 Mock 模式试跑**
 
 ```bash
-python bug_report.py "点击登录按钮后页面一直转圈" --mock
+python day6_bugreport.py "点击登录按钮后页面一直转圈" --mock
 ```
 
 Mock 模式用假数据代替模型，可以在几秒内验证整个流程是否正常，包括"第一次输出不合格 → 自动重试 → 成功"的过程。
@@ -64,7 +64,7 @@ Mock 模式用假数据代替模型，可以在几秒内验证整个流程是否
 
 ```bash
 ollama pull qwen2.5:3b
-python bug_report.py "点击登录按钮后页面一直转圈"
+python day6_bugreport.py "点击登录按钮后页面一直转圈"
 ```
 
 生成的报告保存在 `reports/` 文件夹中。
