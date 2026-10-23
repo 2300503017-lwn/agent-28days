@@ -1,0 +1,10 @@
+知识产权数据库】审批详情页底部附件模块不应重复显示新增数据时上传的附件，只显示审批过程中上传的附件
+RN清单，Cash Rebate列表，“入账金额”字段列的右侧需要留点间距，参考左侧第一列
+收票管理--进项发票--点击检查后，在编辑页发票信息预览图无法展示
+新建供应商-商务信息部分-合作品牌处选择了产品线后，pm处选择时报错
+新建入库单提交时报错class com.comtech.procurement.bean.entity.purchase.storage.TStorageApprovalDetail cannot be cast to class com.comtech.procurement.bean.vo.purchase.storage.TStorageApprovalDetailVO
+【PR管理-新建PR-BUFFER采购】"采购类型"下拉选项文字全空白且无法选中，阻塞PR提交
+【PR管理-新建PR-BUFFER采购】PR提交后审批流启动报错"Function not found: containsIgnoreCase"，审批流状态"未开始"
+【PR管理-PR审批】审批列表，筛选数据后点击导出，提示没有数据无法导出
+ [PO管理-EDI操作] 详情页EDI发送成功时间与列表页不一致
+ 入库清单--列表页长时间加载不出来数据
